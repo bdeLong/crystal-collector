@@ -1,6 +1,7 @@
 body{
 background-image: url("../images/Ricksy\ Business\ 2.png");
 background-size: cover;
+background-repeat: no-repeat;
 }
 
 .title{

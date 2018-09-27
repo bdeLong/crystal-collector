@@ -27,7 +27,7 @@ $(document).ready(function () {
   startGame();
 
   function checkIfEqual(){
-    if (crystalsNeeded == crystalsHarvested) {
+    if (crystalsNeeded === crystalsHarvested) {
       wins++;
       $("#win-count").text(wins);
       startGame();
@@ -40,39 +40,36 @@ $(document).ready(function () {
     }
   }
 
-  // When user clicks blue crystal, it reveals the blue crystal value and increases the crystals harvested count by the blue crystal value
-  $("#blue-crystal").on("click", function () {
+  // When user clicks first crystal, it reveals the first crystal value and increases the crystals harvested count by the first crystal value
+  $("#first-crystal").on("click", function () {
     $("#crystal-one-count").text(crystalOneValue);
     crystalsHarvested += crystalOneValue;
     $("#crystals-harvested").text(crystalsHarvested);
     checkIfEqual();
   });
 
-  // When user clicks red crystal, it reveals the red crystal value and increases the crystals harvested count by the red crystal value
-  $("#red-crystal").on("click", function () {
+  // When user clicks second crystal, it reveals the second crystal value and increases the crystals harvested count by the second crystal value
+  $("#second-crystal").on("click", function () {
     $("#crystal-two-count").text(crystalTwoValue);
     crystalsHarvested += crystalTwoValue;
     $("#crystals-harvested").text(crystalsHarvested);
     checkIfEqual();
   });
 
-  // When user clicks clear crystal, it reveals the clear crystal value and increases the crystals harvested count by the clear crystal value
-  $("#clear-crystal").on("click", function () {
+  // When user clicks third crystal, it reveals the third crystal value and increases the crystals harvested count by the third crystal value
+  $("#third-crystal").on("click", function () {
     $("#crystal-three-count").text(crystalThreeValue);
     crystalsHarvested += crystalThreeValue;
     $("#crystals-harvested").text(crystalsHarvested);
     checkIfEqual();
   });
 
-  // When user clicks purple crystal, it reveals the purple crystal value and increases the crystals harvested count by the purple crystal value
-  $("#purple-crystal").on("click", function () {
+  // When user clicks fourth crystal, it reveals the fourth crystal value and increases the crystals harvested count by the fourth crystal value
+  $("#fourth-crystal").on("click", function () {
     $("#crystal-four-count").text(crystalFourValue);
     crystalsHarvested += crystalFourValue;
     $("#crystals-harvested").text(crystalsHarvested);
     checkIfEqual();
   });
 
-  setTimeout(function () {
-    console.log(wins, losses);
-  }, 10000);
 });
