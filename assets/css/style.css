@@ -1,0 +1,94 @@
+body{
+background-image: url("../images/Ricksy\ Business\ 2.png");
+background-size: cover;
+}
+
+.title{
+  font-family: 'Monoton', cursive;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff, 0 0 55px #cc00ff, 0 0 75px #cc00ff;
+}
+
+img {
+  height: 300px;
+  width: 100%;
+}
+
+.instructions {
+  margin-top: 50px;
+  background: rgba(11, 233, 233, 0.75);
+  border:5px solid #cc00ff;
+  padding: 3px;
+  font-size: 14px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff;
+}
+
+.crystal-number {
+  padding-bottom: 10px;
+  margin-top: 20px;
+  background: rgba(11, 233, 233, 0.75);
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  border-top:5px solid #cc00ff;
+  border-right: 2.5px solid #cc00ff;
+  border-bottom:5px solid #cc00ff;
+  border-left:5px solid #cc00ff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff;
+}
+
+.harvest-number{
+  padding-bottom: 10px;
+  margin-top: 20px;
+  background: rgba(11, 233, 233, 0.75);
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  border-top:5px solid #cc00ff;
+  border-right: 2.5px solid #cc00ff;
+  border-bottom:5px solid #cc00ff;
+  border-left: 2.5px solid #cc00ff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff;
+}
+
+.win-loss-count{
+  padding-top: 15px;
+  margin-top: 20px;
+  background: rgba(11, 233, 233, 0.75);
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  border-top:5px solid #cc00ff;
+  border-right:5px solid #cc00ff;
+  border-bottom:5px solid #cc00ff;
+  border-left: 2.5px solid #cc00ff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff;
+}
+
+.crystal {
+  margin-top: 50px;
+  height: 150px;
+  width: 100%;
+  background: none;
+  cursor: pointer;
+}
+
+.crystal:active{
+  transform: scale(.75);
+}
+
+.crystal-value{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.caption {
+  background: rgba(11, 233, 233, 0.75);
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff, 0 0 55px #cc00ff, 0 0 75px #cc00ff;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff;
+}
