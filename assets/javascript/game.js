@@ -30,12 +30,14 @@ $(document).ready(function () {
     if (crystalsNeeded === crystalsHarvested) {
       wins++;
       $("#win-count").text(wins);
+      $("#instructions").text("Great work, Morty! But it looks like we need more crystals! Go forth and get me more crystals! And since you've done such a great job I've decided to start logging your wins, Morty! You're a real little winner, aren't you, Morty?! Don't let it go to your head, Morty! Now quit dillying and get me those crystals! Oh, and the crystal clusters have transmogrified and the amount you harvest is back to being a mystery, so you'll have to use more math, Morty! MORE MATH! Now get clicking and save us from these tenticle monsters!")
       startGame();
     }
   
     else if (crystalsNeeded < crystalsHarvested){
       losses++;
       $("#loss-count").text(losses);
+      $("#instructions").text("Oh no, Morty! You've overloaded the device with more crystals than we needed, and it's broken, Morty! You've killed us you little turd! We're going to DIE! WE'RE DEAD, MORTY! But before you start freaking out, I want you to know that I can fix the device! I can fix it, Morty! But while I'm fixing it I need you to go out and harvest this new number of crystals! And because you've done such a fantastic job of mucking up our situation, Morty, I've decided to start logging your losses! Because you need to be knocked down a peg, Morty! Not so high and mighty anymore are you?! Oh, and the crystal clusters have transmogrified and the amount you harvest is back to being a mystery, so you'll have to use more math, Morty! MORE MATH! Now get clicking and save us from these tenticle monsters!")
       startGame();
     }
   }

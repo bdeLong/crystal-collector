@@ -11,26 +11,42 @@ background-repeat: no-repeat;
 }
 
 img {
-  height: 300px;
+  height: 350px;
   width: 100%;
 }
 
-.instructions {
+#instructions {
+	position: relative;
+  border-radius: .4em;
   margin-top: 50px;
-  background: rgba(11, 233, 233, 0.75);
+  background: rgba(11, 233, 233, 0.8);
   border:5px solid #cc00ff;
   padding: 3px;
-  font-size: 14px;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 900;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff;
+  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+#instructions:after {
+  content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 61px solid transparent;
+	border-left-color: #cc00ff;
+	border-right: 0;
+	border-top: 0;
+	margin-top: -30.5px;
+	margin-right: -61px;
 }
 
 .crystal-number {
   padding-bottom: 10px;
   margin-top: 20px;
   background: rgba(11, 233, 233, 0.75);
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
   border-top:5px solid #cc00ff;
@@ -44,7 +60,7 @@ img {
   padding-bottom: 10px;
   margin-top: 20px;
   background: rgba(11, 233, 233, 0.75);
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
   border-top:5px solid #cc00ff;
@@ -58,7 +74,7 @@ img {
   padding-top: 15px;
   margin-top: 20px;
   background: rgba(11, 233, 233, 0.75);
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
   border-top:5px solid #cc00ff;
@@ -69,9 +85,9 @@ img {
 }
 
 .crystal {
-  margin-top: 50px;
-  height: 150px;
-  width: 100%;
+  margin-top: 20px;
+  height: 100px;
+  width: 150px;
   background: none;
   cursor: pointer;
 }
@@ -86,8 +102,9 @@ img {
 }
 
 .caption {
+  margin-top: 10px;
   background: rgba(11, 233, 233, 0.75);
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #cc00ff, 0 0 30px #cc00ff, 0 0 40px #cc00ff, 0 0 55px #cc00ff, 0 0 75px #cc00ff;
