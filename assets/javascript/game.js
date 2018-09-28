@@ -10,6 +10,7 @@ $(document).ready(function () {
   var wins = 0;
   var losses = 0;
 
+  // function that starts the game and resets the game after win/loss
   function startGame() {
     crystalsNeeded = Math.floor(Math.random() * 102) + 19;
     crystalOneValue = Math.floor(Math.random() * 12) + 1;
@@ -26,6 +27,7 @@ $(document).ready(function () {
   }
   startGame();
 
+  // function to determine win/loss conditions
   function checkIfEqual(){
     if (crystalsNeeded === crystalsHarvested) {
       wins++;
@@ -42,7 +44,7 @@ $(document).ready(function () {
     }
   }
 
-  // When user clicks first crystal, it reveals the first crystal value and increases the crystals harvested count by the first crystal value
+  // When user clicks first crystal, it reveals the first crystal value and increases the crystals harvested count by the first crystal value and checks win/loss condition
   $("#first-crystal").on("click", function () {
     $("#crystal-one-count").text(crystalOneValue);
     crystalsHarvested += crystalOneValue;
@@ -50,7 +52,7 @@ $(document).ready(function () {
     checkIfEqual();
   });
 
-  // When user clicks second crystal, it reveals the second crystal value and increases the crystals harvested count by the second crystal value
+  // When user clicks second crystal, it reveals the second crystal value and increases the crystals harvested count by the second crystal value and checks win/loss condition
   $("#second-crystal").on("click", function () {
     $("#crystal-two-count").text(crystalTwoValue);
     crystalsHarvested += crystalTwoValue;
@@ -58,7 +60,7 @@ $(document).ready(function () {
     checkIfEqual();
   });
 
-  // When user clicks third crystal, it reveals the third crystal value and increases the crystals harvested count by the third crystal value
+  // When user clicks third crystal, it reveals the third crystal value and increases the crystals harvested count by the third crystal value and checks win/loss condition
   $("#third-crystal").on("click", function () {
     $("#crystal-three-count").text(crystalThreeValue);
     crystalsHarvested += crystalThreeValue;
@@ -66,7 +68,7 @@ $(document).ready(function () {
     checkIfEqual();
   });
 
-  // When user clicks fourth crystal, it reveals the fourth crystal value and increases the crystals harvested count by the fourth crystal value
+  // When user clicks fourth crystal, it reveals the fourth crystal value and increases the crystals harvested count by the fourth crystal value and checks win/loss condition
   $("#fourth-crystal").on("click", function () {
     $("#crystal-four-count").text(crystalFourValue);
     crystalsHarvested += crystalFourValue;
